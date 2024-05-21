@@ -1,15 +1,14 @@
 package designPatterns;
 
 public class Singlton {
-    /// creating only a single instance of a class and giving a global access to the class.
-    // I'm coming to the next step of software development and getting a brand new job here in tampa, allowing the main purpose of the learning
+    /// creating only a single instance of a class and giving a global access to the class. thread safety is not guaranteed
 
 
     // to create a singlton class, we need a static member, private constructor and static factory method.
 
 
     // the static variable makes us to access the variable globally.
-    private static Singlton singlton = new Singlton();
+    private static final Singlton singlton = new Singlton();
 
     // this private constructor makes creating objects impossible
     private Singlton(){
