@@ -1,28 +1,23 @@
 package designPatterns;
-
-import java.security.PublicKey;
-
 public class LazySinglton {
-    private static LazySinglton lazySinglton;
-
-    private LazySinglton() {
+    public static LazySinglton instance;
+    private LazySinglton(){
     }
 
-    public static LazySinglton getLazySinglton() {
-        if(lazySinglton==null) {
-            lazySinglton = new LazySinglton();
-
+    public LazySinglton getInstance() {
+        if(instance==null){
+            instance = new LazySinglton();
         }
-        return lazySinglton;
+        return instance;
     }
 
-    public String showMessage() {
-        return "This is sample message";
+    public String returnString() {
+        return "Here is the method ";
     }
 
     public static void main(String[] args) {
-        LazySinglton lazySinglton1 = LazySinglton.getLazySinglton();
-        System.out.println( lazySinglton1.showMessage());
+        LazySinglton lazySinglton1 = new LazySinglton().getInstance(); // method called when the getInstance is called
+        System.out.println(lazySinglton1.returnString());
     }
 
 }

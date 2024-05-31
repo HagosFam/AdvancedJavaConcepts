@@ -1,6 +1,6 @@
 package designPatterns;
 
-public class Singlton {
+public class eagerSinglton {
     /// creating only a single instance of a class and giving a global access to the class. thread safety is not guaranteed
 
 
@@ -8,35 +8,30 @@ public class Singlton {
 
 
     // the static variable makes us to access the variable globally.
-    private static final Singlton singlton = new Singlton();
+    private static final eagerSinglton EAGER_SINGLTON = new eagerSinglton();
+
     // this private constructor makes creating objects impossible
-    private Singlton(){
+    private eagerSinglton() {
 
     }
 
-    private Singlton getSinglton() {
-        return singlton;
-    }
+    public static void main(String[] args) {
+        eagerSinglton eagerSinglton1 = eagerSinglton.EAGER_SINGLTON;
+        System.out.println(eagerSinglton1.doSomething());
 
+        // System.out.println(Singlton.singlton);
+    }
 
     // then do this.
-    public void doSomething() {
+    public String doSomething() {
 
+        return "Return something";
     }
 
     @Override
     public String toString() {
         return "Singlton{}";
     }
-
-    public static void main(String[] args) {
-        System.out.println("Lets see what will be printed here");
-        System.out.println(Singlton.singlton);
-    }
-
-
-
-
 
 
 }
