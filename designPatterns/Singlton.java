@@ -9,7 +9,6 @@ public class Singlton {
 
     // the static variable makes us to access the variable globally.
     private static final Singlton singlton = new Singlton();
-
     // this private constructor makes creating objects impossible
     private Singlton(){
 
