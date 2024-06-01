@@ -3,9 +3,7 @@ package designPatterns;
 public class eagerSinglton {
     /// creating only a single instance of a class and giving a global access to the class. thread safety is not guaranteed
 
-
     // to create a singlton class, we need a static member, private constructor and static factory method.
-
 
     // the static variable makes us to access the variable globally.
     private static final eagerSinglton EAGER_SINGLTON = new eagerSinglton();
