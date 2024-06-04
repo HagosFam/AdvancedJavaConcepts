@@ -6,9 +6,10 @@ public interface Java8Interfaces {
 
     default void myMethod() {
         // this is used to provide common implementation to the classes that implement it
+        // this is used to provide common service to all the classes
     }
 
     static void myStaticMethod() {
-        // To just directly use
+        // The static one is to use it like utility class
     }
 }
