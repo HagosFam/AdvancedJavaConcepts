@@ -20,7 +20,5 @@ public class NameComparator implements Comparator<Employee> {
         System.out.println("Output ");
         System.out.println(nameComparator.compare(employee1, employee2));
 
-
-
     }
 }
