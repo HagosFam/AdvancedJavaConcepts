@@ -1,5 +1,8 @@
 package Exception;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ExceptionDemo {
     public static int methodName() throws ArithmeticException {
         int x = 0;
@@ -19,6 +22,7 @@ public class ExceptionDemo {
     }
 
     public static void main(String[] args) {
+        List<? extends Number> list = new ArrayList<>();
 
         System.out.println(ExceptionDemo.methodName());
     }
