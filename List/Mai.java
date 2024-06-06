@@ -1,5 +1,7 @@
 package List;
 
+import generics.Size;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -43,6 +45,17 @@ public class Mai {
         for(Employee e:employees1) {
             System.out.println("Location " + e.getDepartment().getLocation());
         }
+
+
+
+
+        // This is how we demo an enum
+        Size size = Size.Large;  // this is when we need the ENUM
+
+        String sizeInString = Size.Medium.name(); // This is when we need a size in string
+
+
+
 
     }
 }
