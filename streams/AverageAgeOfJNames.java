@@ -1,7 +1,9 @@
 package streams;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.OptionalDouble;
 import java.util.stream.Stream;
 
 public class AverageAgeOfJNames {
@@ -18,20 +20,11 @@ public class AverageAgeOfJNames {
     }
 
     public static double calculateAverageAgeOfJNames(List<Person> people) {
+
+        OptionalDouble iinte = people.stream().filter(name->name.getName().startsWith("J")).mapToInt(Person::getAge).average();
+
         return 0;
     }
-
-    List<String> strings = Arrays.asList("Nigus", "Abraha", "Hagos");
-
-    String[] strArray = strings.stream().toArray(String[]::new);  // this is how to list into array
-
-    // how to change array into list
-
-    Integer[] ints = {4,6,7,8,9,6};
-
-    List<Integer> intList = Arrays.asList(ints); // i changed this array into list and now i can apply stream operations here.
-
-
 
 
 
