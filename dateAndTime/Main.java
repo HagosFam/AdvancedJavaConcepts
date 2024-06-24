@@ -1,9 +1,7 @@
-package DateAndTime;
+package dateAndTime;
 
 import java.time.LocalDate;
-import java.time.ZoneId;
 import java.time.ZonedDateTime;
-import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
-package Comprator;
+package comprator;
 
-import List.Department;
-import List.Employee;
+import list.Department;
+import list.Employee;
 
 import java.util.Comparator;
 

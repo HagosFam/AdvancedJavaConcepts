@@ -1,4 +1,4 @@
-package Comprator;
+package comprator;
 
 public class Comprator {
     // basically both comparator and comprable compares members of a class

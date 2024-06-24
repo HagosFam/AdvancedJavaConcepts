@@ -1,4 +1,4 @@
-package DateAndTime;
+package dateAndTime;
 
 public enum Days {
     Monday,
